@@ -1,0 +1,14 @@
+{
+  "name": "javascript-starter",
+  "version": "1.0.0",
+  "description": "Basic JavaScript programming exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "mchaitanya",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
