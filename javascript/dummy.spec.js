@@ -1,3 +1,3 @@
-test("Jest installed.", () => {
+test('Jest installed.', () => {
   expect(true).toBe(true);
 });
