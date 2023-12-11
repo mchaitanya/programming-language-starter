@@ -1,0 +1,9 @@
+# See: https://github.com/github/gitignore/blob/main/Python.gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Unit tests
+.pytest_cache/
+
+# Environments
+.venv
