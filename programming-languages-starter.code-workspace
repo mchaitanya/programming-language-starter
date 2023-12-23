@@ -1,11 +1,21 @@
 {
-	"folders": [
-		{
-			"path": "javascript"
-		},
-		{
-			"path": "python"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "javascript"
+    },
+    {
+      "path": "python"
+    },
+    {
+      "path": "./",
+      "name": "programming-languages-starter"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": false,
+      "javascript/": true,
+      "python/": true,
+    }
+  }
 }
