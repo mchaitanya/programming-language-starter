@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Script generated from ChatGPT
+# https://chat.openai.com/share/6425eea6-3c59-47fb-810f-cc22f58af56f
+
+# Get the root directory of the Git repository
+repo_root=$(git rev-parse --show-toplevel)
+
+# Define the paths to the JavaScript and Python folders
+javascript_folder="${repo_root}/javascript"
+python_folder="${repo_root}/python"
+
+# Function to run ESLint on JavaScript files
+lint_javascript() {
+  echo "Linting JavaScript files..."
+  eslint_cmd="${javascript_folder}/node_modules/.bin/eslint"
+  ${eslint_cmd} "${javascript_folder}"/**/*.js
+}
+
+# Function to run Pylint on Python files
+lint_python() {
+  echo "Linting Python files..."
+  pylint_cmd="${python_folder}/.venv/bin/pylint"
+  ${pylint_cmd} "${python_folder}"/**/*.py
+}
+
+# Run linting functions
+lint_javascript
+lint_python
+
+# Exit with non-zero status if any linting errors are found
+if [ $? -ne 0 ]; then
+  echo "Linting failed. Commit aborted."
+  exit 1
+fi
+
+# If all linting passes, continue with the commit
+exit 0
