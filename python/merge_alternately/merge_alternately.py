@@ -1,15 +1,13 @@
-""" This module contains the merge_alternately function. """
+"""This module contains the merge_alternately function."""
 
 
 def merge_alternately(word1, word2):
-    """
-    Merge the given words by adding the letters in alternating order.
+    """Merge the given words by adding the letters in alternating order.
 
     If one word is longer than the other, the additional letters
     are appended onto the end of the merged string.
 
-    Returns:
-        string: The merged string
+    Returns: string
     """
     result = ""
     for char1, char2 in zip(word1, word2):

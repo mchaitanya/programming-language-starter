@@ -1,4 +1,4 @@
-""" Module to check pytest can detect & run tests."""
+"""This module checks pytest can detect & run tests."""
 
 
 def test_pytest_installed():

@@ -1,4 +1,4 @@
-""" This module contains tests for the merge_alternately function."""
+"""This module contains tests for the merge_alternately function."""
 import pytest
 
 from merge_alternately import merge_alternately
